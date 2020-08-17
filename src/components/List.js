@@ -14,22 +14,6 @@ import {useDispatch, useSelector} from 'react-redux';
 const List = () => {
   const dispatch = useDispatch();
   const images = useSelector((state) => state.getImagesReducer.images);
-  // const a = useSelector((state) => state.getImagesReducer.a);
-  // const imagesRef = useRef(images);
-
-  // const [data, setData] = useState([]);
-  // // console.log('INITIAsL', images);
-  // useEffect(() => {
-  //   // setData([...images]);
-  //   setData(images);
-  //   if (a === images) {
-  //     console.log('equal');
-  //   } else {
-  //     console.log('not equal');
-  //   }
-
-  //   // imagesRef.current = images;
-  // }, [images, a]);
 
   return (
     <FlatList
