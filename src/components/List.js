@@ -14,7 +14,7 @@ import {useDispatch, useSelector} from 'react-redux';
 const List = () => {
   const dispatch = useDispatch();
   const images = useSelector((state) => state.getImagesReducer.images);
-  const a = useSelector((state) => state.getImagesReducer.a);
+  // const a = useSelector((state) => state.getImagesReducer.a);
   // const imagesRef = useRef(images);
 
   // const [data, setData] = useState([]);
@@ -56,7 +56,7 @@ const List = () => {
         </>
       }
       data={images}
-      extraData={a}
+      extraData={images}
       renderItem={({item}) => (
         <View>
           {/* <Card url={item.download_url} like={item.like} id={item.id} /> */}

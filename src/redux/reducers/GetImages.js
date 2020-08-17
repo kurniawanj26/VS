@@ -9,7 +9,7 @@ import {
 
 const defaultState = {
   images: [],
-  a: [],
+  // a: [],
 };
 
 const reducer = (state = defaultState, action) => {
@@ -18,7 +18,7 @@ const reducer = (state = defaultState, action) => {
       // console.log('OLD IMAGES', action.payload);
       return {
         ...state,
-        a: action.payload,
+        // a: action.payload,
         images: action.payload,
       };
     case LIKE_ALL:
